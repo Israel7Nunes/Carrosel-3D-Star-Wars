@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background-color: #b1b1b1;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+body header{
+    background-color: #000000;
+    margin-left: 32%;
+    margin-right: 32%;
+    border-radius: 8px;
+}
+
+body header h1{
+    color: #FFE81F;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+body header h1 span{
+    text-transform: lowercase;
+    font-size: 0.4em;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0px auto;
+    perspective: 900px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards;
+}
+
+.imagem{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    width: 290px;
+    height: 187px;
+    background-size: cover;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px #1a1a1a;
+}
+
+.imagem span{
+    font-size: 1.2em;
+    margin: auto;
+    text-align: center;
+}
+
+@keyframes rotate360 {
+
+    from{
+        transform: rotateY(0deg);
+    }
+    
+    to{
+        transform: rotateY(360deg);
+    }
+
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://qph.cf2.quoracdn.net/main-qimg-57dc7cf2cede5e3f2d6af131425f41fd-lq);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://i.kym-cdn.com/news_feeds/icons/mobile/000/037/359/05b.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+    background-image: url(https://i.ytimg.com/vi/YLkZc0oKf28/maxresdefault.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://acmi-website-media-prod.s3.ap-southeast-2.amazonaws.com/media/images/Vader_I_am_Your_Father.original.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1589735227430-HQR8PHUBVO2R3GZEVV55/image-asset.jpeg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://rollingstone.uol.com.br/media/uploads/yoda-star-wars-a-vinganca-dos-sith_reproducao.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+    background-image: url(https://www.bandai.com/media/wysiwyg/blog-posts/R2_Getting_Shocked.png);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(https://thecomeback.com/wp-content/uploads/2017/01/chewbacca_rage.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://i.redd.it/burefyofblf91.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
